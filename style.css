@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+body{
+    margin: 0;
+    font-family: 'Heebo', sans-serif;;
+}
+
+header, nav, main,footer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+header, main{
+    flex-direction: column;
+}
+header{
+    background-color: rgb(240, 240, 240);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+.input-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input{
+    height: 6vh;
+    width: 16vw;
+    border-radius: 25px;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px inset rgba(20, 20, 167, 0.3);
+    font-family: 'Heebo', sans-serif;;
+    margin-left: 2%;
+}
+#username-data{
+    width: 25vw;
+    margin-right: 5px;
+}
+button{
+    margin-left: 2%;
+    width: 6vw;
+    border-radius: 40px;
+    border:none;
+    background-color: rgb(75, 75, 211);
+    font-family: 'Heebo', sans-serif;;
+    color: #fff;
+    font-size:1rem;    
+}
+button:hover{
+    cursor:pointer;
+    background-color:rgba(75, 75, 211,0.8) ;
+}
+i{
+    color: #fff;
+}
+.table-build{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    width: 70%;  
+    visibility: hidden;
+}
+tr:not(:first-child){
+    background-color: #fff;
+    font-weight: 800;
+}
+td{
+    border-radius: 2px;
+    text-align: center;
+    height: 1vh;
+    width: 20%;
+    padding: 2%;
+}
+td:hover{
+    font-size: 1.2em;
+    font-weight:bolder ;
+    height: 2vh;
+}
+nav{
+    height: 75px;
+    background-color: rgb(50, 51, 51);
+    border-radius: 5px;
+}
+nav, footer{
+    justify-content: center;
+}
+main{
+    background-color: rgb(143, 156, 190);
+    margin-bottom: 15px;
+}

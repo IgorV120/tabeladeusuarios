@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/cb65ec8e09.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Cadastre!</h2>
+        <p>Insira o nome, idade, altura e o estado da pessoa: </p>
+        <section class="input-section">
+            <input type="text" name="name" id="input-name" placeholder="Insira nome..." required>
+            <input type="text" name="age" id="input-age" placeholder="Insira idade..." required>
+            <input type="text" name="height" id="input-height"  placeholder="Insira altura..." required>
+            <input type="text" name="state" id="input-state"  placeholder="Insira estado..." required>
+            <button class="send">Enviar</button>
+        </section>
+    </header>
+    <nav>
+        <input type="text" name="username" id="username-data" 
+        placeholder="Busque por nome, idade..."onkeyup="tableSearch()">    
+            <i class="fas fa-search"></i>
+           
+    </nav>
+    <main>
+        <section class="table-build">
+            <table>
+                <tr>
+                    <th class="th-name">Nome</th>
+                    <th>Idade</th>
+                    <th>Altura</th>
+                    <th>Estado</th>
+                </tr>                         
+                
+            </table>
+        </section>
+    </main>
+    <footer>
+        <section class="section-footer"> <p> </p></section>
+    </footer>
+</body>
+
+</html>
