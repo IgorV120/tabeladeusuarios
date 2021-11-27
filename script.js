@@ -13,14 +13,12 @@ let button = document.querySelector('.send')
 button.addEventListener("click", () =>{
     builderAux = []
     fields.forEach(field=>{   
-             builderAux.push(field.value)      
+        builderAux.push(field.value)
     })
-    
       const person = new Person(builderAux[0],builderAux[1],builderAux[2],builderAux[3])
       builderAux = [];
-      tableInsert(person)
-    }
-)
+      tableInsert(person)  
+})
 
 function tableInsert(person){
     let table = document.querySelector('table')
